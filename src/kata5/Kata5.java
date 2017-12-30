@@ -7,9 +7,9 @@ package kata5;
 
 import kata5.Histogram;
 import kata5.Mail;
-import view.HistogramDisplay;
-import view.MailHistogramBuilder;
-import view.MailListReader;
+import view2.HistogramDisplay;
+import view2.MailHistogramBuilder;
+import view2.MailListReader;
 
 import java.sql.*;
 import java.util.List;

@@ -33,6 +33,12 @@ public class Kata5 {
                 System.out.println("ID=" + resultSet.getInt("id"));
                 System.out.println("Nombre=" + resultSet.getString("name"));
             }
+            // Creamos la tabla mail
+            List<Mail> mails = MailListReader.read("emails.txt");
+            for (Mail m : mails) {
+                s.execute("INSERT INTO mails(id,mail) VALUES(null,'" + m.getMail() + "')");
+            }
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {

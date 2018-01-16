@@ -10,17 +10,23 @@ package kata5;
  * @author Laura
  */
 public class Mail {
+
     private final String mail;
-    
-    public Mail (String mail){
+
+    public Mail(String mail) {
         this.mail = mail;
     }
-    
-    public String getDomain(){
+
+    public String getDomain() {
         int index = mail.indexOf("@");
-        if(index >= 0){
-            return mail.substring( index+1);
+        if (index >= 0) {
+            return mail.substring(index + 1);
         }
         return null;
     }
+
+    public String getMail() {
+        return mail;
+    }
+
 }
